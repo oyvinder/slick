@@ -1,9 +1,3 @@
-pipeline {
-  stages {
-    stage('build') {
-      steps {
-        sh 'mvn --version'
-      }
-    }
-  }
+node {
+  echo "Hello zzz"
 }
