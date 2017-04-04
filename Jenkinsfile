@@ -1,6 +1,10 @@
-node {
-  echo "Hello zzz"
-
-  git https://github.com/oyvinder/slick.git
-
+peline {
+    agent any
+    stages { 
+        stage('Example') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+    }
 }
