@@ -4,6 +4,8 @@ pipeline {
         stage('Example') {
             steps {
                 echo 'Hello World'
+                
+                scm checkout
             }
         }
     }
