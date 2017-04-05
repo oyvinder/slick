@@ -1,12 +1,12 @@
+#!/usr/bin/env groovy
+
 pipeline {
     agent any
     stages { 
-        stage('Example') {
-            steps {
-                echo 'Hello World'
-                
-                scm checkout
-            }
+        stage('Test') {
+            git url: 'https://github.com/oyvinder/slick.git'
+            
+            
         }
     }
 }
